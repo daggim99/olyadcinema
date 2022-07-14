@@ -5,6 +5,7 @@
   "author": "Daggim Hailu",
   "license": "MIT",
   "engines": {
+    "npm": "6.x",
     "node": "14.x"
   },
   "dependencies": {
