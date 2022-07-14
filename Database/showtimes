@@ -1,0 +1,451 @@
+[{
+  "_id": {
+    "$oid": "62bf50df69f1c8cf5f2871ed"
+  },
+  "startAt": "18:00",
+  "startDate": {
+    "$date": "2022-07-01T19:53:28.645Z"
+  },
+  "endDate": {
+    "$date": "2022-09-23T19:53:00Z"
+  },
+  "movieId": {
+    "$oid": "62bf44db69f1c8cf5f28716e"
+  },
+  "cinemaId": {
+    "$oid": "62bd41c076affefe3301943d"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "62bf511869f1c8cf5f2871f5"
+  },
+  "startAt": "19:00",
+  "startDate": {
+    "$date": "2022-07-01T19:54:42.024Z"
+  },
+  "endDate": {
+    "$date": "2022-07-30T19:54:00Z"
+  },
+  "movieId": {
+    "$oid": "62bf463f69f1c8cf5f28717f"
+  },
+  "cinemaId": {
+    "$oid": "62bde14bdd2db613f1f8b0be"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "62bf513769f1c8cf5f2871f8"
+  },
+  "startAt": "20:00",
+  "startDate": {
+    "$date": "2022-07-01T19:55:09.214Z"
+  },
+  "endDate": {
+    "$date": "2022-08-20T19:55:00Z"
+  },
+  "movieId": {
+    "$oid": "62bf43a969f1c8cf5f28715d"
+  },
+  "cinemaId": {
+    "$oid": "62bdfb52ca65922806b9d3ef"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "62bf516269f1c8cf5f2871fb"
+  },
+  "startAt": "21:00",
+  "startDate": {
+    "$date": "2022-07-01T19:55:53.238Z"
+  },
+  "endDate": {
+    "$date": "2022-09-10T19:55:00Z"
+  },
+  "movieId": {
+    "$oid": "62bf42c069f1c8cf5f28714d"
+  },
+  "cinemaId": {
+    "$oid": "62bf4cc869f1c8cf5f2871ab"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "62bf518569f1c8cf5f2871fe"
+  },
+  "startAt": "22:00",
+  "startDate": {
+    "$date": "2022-07-01T19:56:00Z"
+  },
+  "endDate": {
+    "$date": "2022-10-29T19:56:00Z"
+  },
+  "movieId": {
+    "$oid": "62bf41dc69f1c8cf5f287149"
+  },
+  "cinemaId": {
+    "$oid": "62bf4cc869f1c8cf5f2871ab"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "62bf51a769f1c8cf5f287201"
+  },
+  "startAt": "23:00",
+  "startDate": {
+    "$date": "2022-07-01T19:56:57.306Z"
+  },
+  "endDate": {
+    "$date": "2022-08-27T19:56:00Z"
+  },
+  "movieId": {
+    "$oid": "62bf40bc69f1c8cf5f287138"
+  },
+  "cinemaId": {
+    "$oid": "62bf4f3169f1c8cf5f2871c7"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "62bf51c269f1c8cf5f287204"
+  },
+  "startAt": "23:00",
+  "startDate": {
+    "$date": "2022-07-01T19:57:31.387Z"
+  },
+  "endDate": {
+    "$date": "2022-09-30T19:57:00Z"
+  },
+  "movieId": {
+    "$oid": "62bde0f6dd2db613f1f8b0b8"
+  },
+  "cinemaId": {
+    "$oid": "62bf502869f1c8cf5f2871ce"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "62bf51e769f1c8cf5f287207"
+  },
+  "startAt": "19:00",
+  "startDate": {
+    "$date": "2022-07-01T19:57:59.097Z"
+  },
+  "endDate": {
+    "$date": "2022-09-27T19:57:00Z"
+  },
+  "movieId": {
+    "$oid": "62bdf970ca65922806b9d291"
+  },
+  "cinemaId": {
+    "$oid": "62bd41c076affefe3301943d"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "62bf520769f1c8cf5f28720a"
+  },
+  "startAt": "18:00",
+  "startDate": {
+    "$date": "2022-07-01T19:58:35.460Z"
+  },
+  "endDate": {
+    "$date": "2024-01-31T19:58:00Z"
+  },
+  "movieId": {
+    "$oid": "62bd4c808a7d44427320cbc4"
+  },
+  "cinemaId": {
+    "$oid": "62bdfb52ca65922806b9d3ef"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "62bf522369f1c8cf5f28720d"
+  },
+  "startAt": "21:00",
+  "startDate": {
+    "$date": "2022-07-01T19:59:09.713Z"
+  },
+  "endDate": {
+    "$date": "2022-09-24T19:59:00Z"
+  },
+  "movieId": {
+    "$oid": "62bdf970ca65922806b9d291"
+  },
+  "cinemaId": {
+    "$oid": "62bde14bdd2db613f1f8b0be"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "62bf524069f1c8cf5f287210"
+  },
+  "startAt": "23:00",
+  "startDate": {
+    "$date": "2022-07-01T19:59:00Z"
+  },
+  "endDate": {
+    "$date": "2022-08-26T19:59:00Z"
+  },
+  "movieId": {
+    "$oid": "62bf42c069f1c8cf5f28714d"
+  },
+  "cinemaId": {
+    "$oid": "62bdfb52ca65922806b9d3ef"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "62bf525d69f1c8cf5f287213"
+  },
+  "startAt": "20:00",
+  "startDate": {
+    "$date": "2022-07-01T20:00:05.057Z"
+  },
+  "endDate": {
+    "$date": "2022-08-20T20:00:00Z"
+  },
+  "movieId": {
+    "$oid": "62bf41dc69f1c8cf5f287149"
+  },
+  "cinemaId": {
+    "$oid": "62bf4f3169f1c8cf5f2871c7"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "62bf528969f1c8cf5f287216"
+  },
+  "startAt": "19:00",
+  "startDate": {
+    "$date": "2022-07-01T20:00:42.876Z"
+  },
+  "endDate": {
+    "$date": "2022-08-19T20:00:00Z"
+  },
+  "movieId": {
+    "$oid": "62bf463f69f1c8cf5f28717f"
+  },
+  "cinemaId": {
+    "$oid": "62bf502869f1c8cf5f2871ce"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "62bf52a769f1c8cf5f287219"
+  },
+  "startAt": "21:00",
+  "startDate": {
+    "$date": "2022-07-01T20:01:18.720Z"
+  },
+  "endDate": {
+    "$date": "2022-09-29T20:01:00Z"
+  },
+  "movieId": {
+    "$oid": "62bf43a969f1c8cf5f28715d"
+  },
+  "cinemaId": {
+    "$oid": "62bde14bdd2db613f1f8b0be"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "62bf52c869f1c8cf5f28721c"
+  },
+  "startAt": "18:00",
+  "startDate": {
+    "$date": "2022-07-01T20:01:47.763Z"
+  },
+  "endDate": {
+    "$date": "2023-01-19T20:01:00Z"
+  },
+  "movieId": {
+    "$oid": "62bf44db69f1c8cf5f28716e"
+  },
+  "cinemaId": {
+    "$oid": "62bf4f3169f1c8cf5f2871c7"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "62bf52e269f1c8cf5f28721f"
+  },
+  "startAt": "19:00",
+  "startDate": {
+    "$date": "2022-07-01T20:02:22.457Z"
+  },
+  "endDate": {
+    "$date": "2022-09-14T20:02:00Z"
+  },
+  "movieId": {
+    "$oid": "62bf42c069f1c8cf5f28714d"
+  },
+  "cinemaId": {
+    "$oid": "62bd41c076affefe3301943d"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "62bf52fe69f1c8cf5f287222"
+  },
+  "startAt": "20:00",
+  "startDate": {
+    "$date": "2022-07-01T20:02:46.454Z"
+  },
+  "endDate": {
+    "$date": "2022-10-31T20:02:00Z"
+  },
+  "movieId": {
+    "$oid": "62bf41dc69f1c8cf5f287149"
+  },
+  "cinemaId": {
+    "$oid": "62bf4cc869f1c8cf5f2871ab"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "62bf531f69f1c8cf5f287225"
+  },
+  "startAt": "22:00",
+  "startDate": {
+    "$date": "2022-07-01T20:03:14.743Z"
+  },
+  "endDate": {
+    "$date": "2022-09-30T20:03:00Z"
+  },
+  "movieId": {
+    "$oid": "62bde0f6dd2db613f1f8b0b8"
+  },
+  "cinemaId": {
+    "$oid": "62bf502869f1c8cf5f2871ce"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "62bf534069f1c8cf5f287228"
+  },
+  "startAt": "23:00",
+  "startDate": {
+    "$date": "2022-07-01T20:03:48.795Z"
+  },
+  "endDate": {
+    "$date": "2022-08-27T20:03:00Z"
+  },
+  "movieId": {
+    "$oid": "62bf40bc69f1c8cf5f287138"
+  },
+  "cinemaId": {
+    "$oid": "62bf502869f1c8cf5f2871ce"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "62bf536369f1c8cf5f28722b"
+  },
+  "startAt": "20:00",
+  "startDate": {
+    "$date": "2022-07-01T20:04:21.649Z"
+  },
+  "endDate": {
+    "$date": "2022-09-30T20:04:00Z"
+  },
+  "movieId": {
+    "$oid": "62bde0f6dd2db613f1f8b0b8"
+  },
+  "cinemaId": {
+    "$oid": "62bd41c076affefe3301943d"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "62bf538469f1c8cf5f28722e"
+  },
+  "startAt": "21:00",
+  "startDate": {
+    "$date": "2022-07-01T20:04:57.345Z"
+  },
+  "endDate": {
+    "$date": "2022-09-27T20:04:00Z"
+  },
+  "movieId": {
+    "$oid": "62bdf970ca65922806b9d291"
+  },
+  "cinemaId": {
+    "$oid": "62bdfb52ca65922806b9d3ef"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "62bf53a769f1c8cf5f287231"
+  },
+  "startAt": "23:00",
+  "startDate": {
+    "$date": "2022-07-01T20:05:28.068Z"
+  },
+  "endDate": {
+    "$date": "2024-01-31T20:05:00Z"
+  },
+  "movieId": {
+    "$oid": "62bd4c808a7d44427320cbc4"
+  },
+  "cinemaId": {
+    "$oid": "62bf4f3169f1c8cf5f2871c7"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "62bf53c469f1c8cf5f287234"
+  },
+  "startAt": "19:00",
+  "startDate": {
+    "$date": "2022-07-01T20:06:04.572Z"
+  },
+  "endDate": {
+    "$date": "2022-10-31T20:06:00Z"
+  },
+  "movieId": {
+    "$oid": "62bf41dc69f1c8cf5f287149"
+  },
+  "cinemaId": {
+    "$oid": "62bf4cc869f1c8cf5f2871ab"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "62bf53df69f1c8cf5f287237"
+  },
+  "startAt": "18:00",
+  "startDate": {
+    "$date": "2022-07-01T20:06:33.544Z"
+  },
+  "endDate": {
+    "$date": "2022-09-27T20:06:00Z"
+  },
+  "movieId": {
+    "$oid": "62bdf970ca65922806b9d291"
+  },
+  "cinemaId": {
+    "$oid": "62bf502869f1c8cf5f2871ce"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "62bf53fc69f1c8cf5f28723a"
+  },
+  "startAt": "18:00",
+  "startDate": {
+    "$date": "2022-07-01T20:07:00.780Z"
+  },
+  "endDate": {
+    "$date": "2022-09-14T20:07:00Z"
+  },
+  "movieId": {
+    "$oid": "62bf42c069f1c8cf5f28714d"
+  },
+  "cinemaId": {
+    "$oid": "62bdfb52ca65922806b9d3ef"
+  },
+  "__v": 0
+}]

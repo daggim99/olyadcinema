@@ -1,0 +1,187 @@
+[{
+  "_id": {
+    "$oid": "62bcbb52243214ee6e14e78e"
+  },
+  "role": "superadmin",
+  "name": "Daggim Hailu",
+  "username": "daggim",
+  "email": "daggimhailu@gmail.com",
+  "phone": "0979341580",
+  "password": "$2a$08$rTumtqSYoJ4bVfswzZiRg.1HkbVAqP40aLBMGgzXYfpxVp3C.7caK",
+  "tokens": [
+    {
+      "_id": {
+        "$oid": "62bd429276affefe330194c1"
+      },
+      "token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2MmJjYmI1MjI0MzIxNGVlNmUxNGU3OGUiLCJpYXQiOjE2NTY1NzA1MTR9.XkiPYrvCU_tZ_HU3EQQmSZD5QUcyTS6Eej8it31TldU"
+    }
+  ],
+  "createdAt": {
+    "$date": "2022-06-29T20:51:30.417Z"
+  },
+  "updatedAt": {
+    "$date": "2022-07-01T22:03:32.571Z"
+  },
+  "__v": 33,
+  "imageurl": "http://localhost:8080/uploads/users/1656535891005-t-logo2.png"
+},{
+  "_id": {
+    "$oid": "62be5d920cba9eb91a7fc972"
+  },
+  "role": "admin",
+  "name": "Daggim Hailu",
+  "username": "dhz",
+  "email": "daggimhailu76@gmail.com",
+  "phone": "0979351580",
+  "password": "$2a$08$rTumtqSYoJ4bVfswzZiRg.1HkbVAqP40aLBMGgzXYfpxVp3C.7caK",
+  "tokens": [
+    {
+      "_id": {
+        "$oid": "62bd429276affefe330194c1"
+      },
+      "token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2MmJjYmI1MjI0MzIxNGVlNmUxNGU3OGUiLCJpYXQiOjE2NTY1NzA1MTR9.XkiPYrvCU_tZ_HU3EQQmSZD5QUcyTS6Eej8it31TldU"
+    },
+    {
+      "_id": {
+        "$oid": "62bd4d058a7d44427320cc99"
+      },
+      "token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2MmJjYmI1MjI0MzIxNGVlNmUxNGU3OGUiLCJpYXQiOjE2NTY1NzMxODl9.-cUD6FarMaCgXcsNtadINIczfGweDvGYylTrm4vPgyc"
+    }
+  ],
+  "createdAt": {
+    "$date": "2022-06-29T20:51:30.417Z"
+  },
+  "updatedAt": {
+    "$date": "2022-07-02T15:52:02.280Z"
+  },
+  "__v": 30,
+  "imageurl": "http://localhost:8080/uploads/users/1656535891005-t-logo2.png"
+},{
+  "_id": {
+    "$oid": "62be5e720cba9eb91a7fc973"
+  },
+  "role": "guest",
+  "name": "Daggim Hailu",
+  "username": "daggim99",
+  "email": "dagimhailu2@gmail.com",
+  "phone": "0979341590",
+  "password": "$2a$08$rTumtqSYoJ4bVfswzZiRg.1HkbVAqP40aLBMGgzXYfpxVp3C.7caK",
+  "tokens": [
+    {
+      "_id": {
+        "$oid": "62bd429276affefe330194c1"
+      },
+      "token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2MmJjYmI1MjI0MzIxNGVlNmUxNGU3OGUiLCJpYXQiOjE2NTY1NzA1MTR9.XkiPYrvCU_tZ_HU3EQQmSZD5QUcyTS6Eej8it31TldU"
+    },
+    {
+      "_id": {
+        "$oid": "62bd4d058a7d44427320cc99"
+      },
+      "token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2MmJjYmI1MjI0MzIxNGVlNmUxNGU3OGUiLCJpYXQiOjE2NTY1NzMxODl9.-cUD6FarMaCgXcsNtadINIczfGweDvGYylTrm4vPgyc"
+    },
+    {
+      "_id": {
+        "$oid": "62c069e385f0fd37bc42b976"
+      },
+      "token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2MmJlNWU3MjBjYmE5ZWI5MWE3ZmM5NzMiLCJpYXQiOjE2NTY3NzcxODd9.O78YyL72QU0Wum28DnBC5ujvWThHMjosYFcgsP71mUI"
+    }
+  ],
+  "createdAt": {
+    "$date": "2022-06-29T20:51:30.417Z"
+  },
+  "updatedAt": {
+    "$date": "2022-07-02T15:53:07.908Z"
+  },
+  "__v": 29,
+  "imageurl": "http://localhost:8080/uploads/users/1656535891005-t-logo2.png"
+},{
+  "_id": {
+    "$oid": "62bf07933b9ecd6407699b9f"
+  },
+  "role": "guest",
+  "name": "New User",
+  "username": "new",
+  "email": "newuser@gmail.com",
+  "phone": "0911742871",
+  "password": "$2a$08$ho7Gd7QU5dySlDyPgf3veOWyJ0MXug.2GIa5krhupMNSyoqJ8LdyG",
+  "tokens": [],
+  "createdAt": {
+    "$date": "2022-07-01T14:41:23.053Z"
+  },
+  "updatedAt": {
+    "$date": "2022-07-01T16:14:27.367Z"
+  },
+  "__v": 8,
+  "imageurl": "http://localhost:8080/uploads/users/1656686483427-AboSem.jpg"
+},{
+  "_id": {
+    "$oid": "62bf09dc3b9ecd6407699c03"
+  },
+  "role": "guest",
+  "name": "Another Person",
+  "username": "ap",
+  "email": "anotherperson@gmail.com",
+  "phone": "0988554433",
+  "password": "$2a$08$q9AsLm/u6FTIA0.VamC5uO1m4d8w5if.OpCuRbit2fp9POdJpEhh.",
+  "tokens": [],
+  "createdAt": {
+    "$date": "2022-07-01T14:51:08.226Z"
+  },
+  "updatedAt": {
+    "$date": "2022-07-01T15:03:32.135Z"
+  },
+  "__v": 2,
+  "imageurl": "http://localhost:8080/uploads/users/1656687068325-ShaftInAfrica.jpg"
+},{
+  "_id": {
+    "$oid": "62bf647832c0132448b954b9"
+  },
+  "role": "guest",
+  "name": "Daggim Hailu",
+  "username": "dagim",
+  "email": "dagim@gmail.com",
+  "phone": "0988776655",
+  "password": "$2a$08$SgROEIZpDAF9ebQo51irMuNNMQshfvKNWQEJDFm9S71asROj980wm",
+  "tokens": [
+    {
+      "_id": {
+        "$oid": "62bf647832c0132448b954bb"
+      },
+      "token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2MmJmNjQ3ODMyYzAxMzI0NDhiOTU0YjkiLCJpYXQiOjE2NTY3MTAyNjR9.MPpfrMa4u0vGYMtn8sOuzfCEEb1fFRWX1t-TaOzgFq0"
+    }
+  ],
+  "createdAt": {
+    "$date": "2022-07-01T21:17:44.151Z"
+  },
+  "updatedAt": {
+    "$date": "2022-07-01T21:18:59.108Z"
+  },
+  "__v": 3,
+  "imageurl": "http://localhost:8080/uploads/users/1656710264382-Crumbs.jpg"
+},{
+  "_id": {
+    "$oid": "62bf6db332c0132448b95532"
+  },
+  "role": "guest",
+  "name": "Daggim Hailu",
+  "username": "dagim999",
+  "email": "dhz@gmail.com",
+  "phone": "0988776653",
+  "password": "$2a$08$20qUu8e39zIGvOZPHIxhu.td4Hs9GcWWsBoeup/JQ3CcAojgHqE3S",
+  "tokens": [
+    {
+      "_id": {
+        "$oid": "62bf6db332c0132448b95534"
+      },
+      "token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2MmJmNmRiMzMyYzAxMzI0NDhiOTU1MzIiLCJpYXQiOjE2NTY3MTI2Mjd9.BZXup-G7TY-OnrSCRJpVHdgndRzUe6x2FOfLmPlOYhs"
+    }
+  ],
+  "createdAt": {
+    "$date": "2022-07-01T21:57:07.026Z"
+  },
+  "updatedAt": {
+    "$date": "2022-07-01T21:59:47.810Z"
+  },
+  "__v": 3,
+  "imageurl": "http://localhost:8080/uploads/users/1656712627127-cinema1.jpeg"
+}]

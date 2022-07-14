@@ -1,0 +1,343 @@
+[{
+  "_id": {
+    "$oid": "62bd4c808a7d44427320cbc4"
+  },
+  "title": "faya dayi",
+  "language": "amharic",
+  "duration": 120,
+  "description": "a spiritual journey into the highlands of harar, immersed in the rituals of khat, a leaf sufi muslims chewed for centuries for religious meditations - and ethiopia's most lucrative cash crop today.",
+  "director": "jessica beshir",
+  "cast": "murano mlbb, kawa sherif, salih sigirci",
+  "releaseDate": {
+    "$date": "2021-09-03T07:09:00Z"
+  },
+  "endDate": {
+    "$date": "2024-01-31T07:09:00Z"
+  },
+  "genre": "drama,documentary",
+  "__v": 0,
+  "image": "http://localhost:8080/uploads/movies/1656699877544-fayaDayi.jpeg"
+},{
+  "_id": {
+    "$oid": "62bde0f6dd2db613f1f8b0b8"
+  },
+  "title": "enchained",
+  "language": "amharic",
+  "duration": 98,
+  "description": "ethiopia, 1916: gobeze is a timid, peace-loving, young man of 25; a brilliant student who dedicates his whole life to \"sem ina werq\" (riddles with dual meaning). he is caught in bed with aleme by gonite, her husband and a wealthy old landlord. following the old ethiopian tradition, both men's clothes are bound together and the rivals set off on a long journey to the royal court to stand trial.",
+  "director": "moges tafesse",
+  "cast": "zerihun mulatu, yemesrach girma, tesfaye yimam",
+  "releaseDate": {
+    "$date": "2022-06-30T17:42:00Z"
+  },
+  "endDate": {
+    "$date": "2022-09-30T17:42:00Z"
+  },
+  "genre": "drama,history,romance",
+  "__v": 0,
+  "image": "http://localhost:8080/uploads/movies/1656700859245-enchained.jpg"
+},{
+  "_id": {
+    "$oid": "62bdf970ca65922806b9d291"
+  },
+  "title": "difret",
+  "language": "amharic",
+  "duration": 99,
+  "description": "a young lawyer travels to an ethiopian village to represent hirut, a 14-year-old girl who shot her would-be husband as he and others were practicing one of the nation's oldest traditions: abduction into marriage.",
+  "director": "zeresenay mehari",
+  "cast": "meron getnet, tizita hagere, abel abebe",
+  "releaseDate": {
+    "$date": "2022-04-15T19:27:00Z"
+  },
+  "endDate": {
+    "$date": "2022-09-27T19:27:00Z"
+  },
+  "genre": "biography,drama,crime",
+  "__v": 0,
+  "image": "http://localhost:8080/uploads/movies/1656700549246-difret.jpg"
+},{
+  "_id": {
+    "$oid": "62bf40bc69f1c8cf5f287138"
+  },
+  "title": "running against the wind",
+  "language": "amharic",
+  "duration": 116,
+  "description": "in ethiopia, two men are running to achieve their dreams.",
+  "director": "jan philipp weyl",
+  "cast": "ashenafi nigusu, mikias wolde, joseph reta belay",
+  "releaseDate": {
+    "$date": "2022-07-01T18:41:09.111Z"
+  },
+  "endDate": {
+    "$date": "2022-08-27T18:41:00Z"
+  },
+  "genre": "drama",
+  "__v": 0,
+  "image": "http://localhost:8080/uploads/movies/1656701116739-Running Against the Wind.jpg"
+},{
+  "_id": {
+    "$oid": "62bf41dc69f1c8cf5f287149"
+  },
+  "title": "lamb",
+  "language": "amharic",
+  "duration": 94,
+  "description": "when an ethiopian boy moves in with distant relatives he takes his pet sheep with him but the upcoming holidays spell danger for his beloved friend.",
+  "director": "yared zeleke",
+  "cast": "rediat amare, kidist siyum, welela assefa",
+  "releaseDate": {
+    "$date": "2022-07-01T18:46:51.557Z"
+  },
+  "endDate": {
+    "$date": "2022-10-31T18:46:00Z"
+  },
+  "genre": "drama,family",
+  "__v": 0,
+  "image": "http://localhost:8080/uploads/movies/1656701649222-lamb.jpeg"
+},{
+  "_id": {
+    "$oid": "62bf42c069f1c8cf5f28714d"
+  },
+  "title": "teza",
+  "language": "amharic",
+  "duration": 140,
+  "description": "the ethiopian intellectual anberber returns to his native country during the repressive totalitarian regime of haile mariam mengistu and the recognition of his own displacement and powerlessness at the dissolution of his people's humanity and social values. after several years spent studying medicine in germany, he finds the country of his youth replaced by turmoil. his dream of using his craft to improve the health of ethiopians is squashed by a military junta that uses scientists for its own political ends. seeking the comfort of his countryside home, anberber finds no refuge from violence. the solace that the memories of his youth provide is quickly replaced by the competing forces of military and rebelling factions. anberber needs to decide whether he wants to bear the strain or piece together a life from the fragments that lie around him.",
+  "director": "haile gerima",
+  "cast": "aaron arefe, abiye tedla, takelech beyene",
+  "releaseDate": {
+    "$date": "2022-07-01T18:50:08.328Z"
+  },
+  "endDate": {
+    "$date": "2022-09-14T18:50:00Z"
+  },
+  "genre": "drama",
+  "__v": 0,
+  "image": "http://localhost:8080/uploads/movies/1656701632367-teza.jpg"
+},{
+  "_id": {
+    "$oid": "62bf43a969f1c8cf5f28715d"
+  },
+  "title": "min alesh?",
+  "language": "amharic",
+  "duration": 84,
+  "description": "the story is set in merkato, a sprawling market in addis ababa, ethiopia, considered to be africa's largest open-air market, narrating the story of a girl, selam, whose kindness and perseverance transforms her life for the better. selam confronts the hardship life of her village but is determined to change the circumstances she and her family face, through athletics. the film depicts the young girl as a symbol and an inspiration for women and girls and that they, too, can be destined for greatness.",
+  "director": "amleset muchie",
+  "cast": "alebachew mekonnenamleset muchiedirbwork seyifu",
+  "releaseDate": {
+    "$date": "2022-07-01T18:54:18.997Z"
+  },
+  "endDate": {
+    "$date": "2022-09-29T18:54:00Z"
+  },
+  "genre": "drama",
+  "__v": 0,
+  "image": "http://localhost:8080/uploads/movies/1656701865479-min alesh.jpeg"
+},{
+  "_id": {
+    "$oid": "62bf44db69f1c8cf5f28716e"
+  },
+  "title": "town of runners",
+  "language": "amharic",
+  "duration": 80,
+  "description": "town of runners is a feature documentary about young runners from the ethiopian rural town of bekoji, home to the current olympic and world champions tirunesh dibaba and kenenisa bekele. the film follows three children as they move from school track to national competition and from childhood to adulthood.",
+  "director": "jerry rothwell",
+  "cast": "local people",
+  "releaseDate": {
+    "$date": "2022-07-01T18:59:28.190Z"
+  },
+  "endDate": {
+    "$date": "2023-01-19T18:59:00Z"
+  },
+  "genre": "documentary,sport",
+  "__v": 0,
+  "image": "http://localhost:8080/uploads/movies/1656702171309-Town of Runners.jpg"
+},{
+  "_id": {
+    "$oid": "62bf463f69f1c8cf5f28717f"
+  },
+  "title": "hairat",
+  "language": "amharic",
+  "duration": 6,
+  "description": "for over 35 years yussuf mume saleh journeys at night to the outskirts of the walled city of harar to bond with his beloved hyenas.",
+  "director": "jessica beshir",
+  "cast": "yussuf mume saleh, elias shagiz adonay tesfaye(voice)",
+  "releaseDate": {
+    "$date": "2022-07-01T19:04:48.089Z"
+  },
+  "endDate": {
+    "$date": "2022-08-19T19:04:00Z"
+  },
+  "genre": "documentary,short",
+  "__v": 0,
+  "image": "http://localhost:8080/uploads/movies/1656702527588-hariat.jpeg"
+},{
+  "_id": {
+    "$oid": "62bf475869f1c8cf5f287185"
+  },
+  "title": "lambadina",
+  "language": "amharic",
+  "duration": 104,
+  "description": "lambadina is a full feature film focusing on a journey of little boy whose story starts in addis ababa, ethiopia and ends in los angeles, ca.",
+  "director": "messay getahun",
+  "cast": "addis kidane, tsion mekonen, besrabhe samson, mesay getahun",
+  "releaseDate": {
+    "$date": "2022-08-09T19:08:00Z"
+  },
+  "endDate": {
+    "$date": "2022-11-25T19:08:00Z"
+  },
+  "genre": "drama",
+  "__v": 0,
+  "image": "http://localhost:8080/uploads/movies/1656702808132-lambadina.jpg"
+},{
+  "_id": {
+    "$oid": "62bf485369f1c8cf5f28718d"
+  },
+  "title": "framing the other",
+  "language": "english",
+  "duration": 41,
+  "description": "framing the other is about a tourist whose comfortable ideas about taking photos of exotic tribal people in ethiopia are shaken by her encounter with a mursi woman.",
+  "director": "ilja kokwillem timmers",
+  "cast": "local people",
+  "releaseDate": {
+    "$date": "2022-08-18T19:13:00Z"
+  },
+  "endDate": {
+    "$date": "2022-09-24T19:13:00Z"
+  },
+  "genre": "documentary",
+  "__v": 0,
+  "image": "http://localhost:8080/uploads/movies/1656703059126-Framing the other.jpeg"
+},{
+  "_id": {
+    "$oid": "62bf491369f1c8cf5f287193"
+  },
+  "title": "sebari milach",
+  "language": "amharic",
+  "duration": 27,
+  "description": "after a young woman gets tricked by her mom into participating in a traditional ritual, she is forced to choose between being mutilated or exiled from her tribal society.",
+  "director": "lethabo mokgatle",
+  "cast": "yohanna bellistri, semenesh cheksa, sofonias feleke",
+  "releaseDate": {
+    "$date": "2022-11-09T19:18:00Z"
+  },
+  "endDate": {
+    "$date": "2022-12-31T19:18:00Z"
+  },
+  "genre": "drama,short",
+  "__v": 0,
+  "image": "http://localhost:8080/uploads/movies/1656703251523-Sebari Milach.jpeg"
+},{
+  "_id": {
+    "$oid": "62bf559169f1c8cf5f28724c"
+  },
+  "title": "fig tree",
+  "language": "amharic",
+  "duration": 93,
+  "description": "16 year old jewish mina, is trying to navigate between a surreal routine dictated by the civil war in ethiopia and her last days of youth with her christian boyfriend eli. when she discovers that her family is planning to immigrate to israel and escape the war, she weaves an alternate plan in order to save eli. but in times of war, plans tend to go wrong. marsha's coming of age film debut film is based on her childhood memories of a civil-war-torn ethiopia.\n\nmina is 16 years old. the ethiopian civil war has been underway her entire life. she lives with her brother and grandmother in a humble house with newsprint for wallpaper. the family is jewish and is planning to flee ethiopia for israel, where mina's mother awaits their reunion. but this plan leaves out the person mina loves most: eli, her christian boyfriend, who lives in the woods so as to evade being drafted into mengistu haile mariam's army. mina hatches a scheme to save eli, but everyone and everything seems set against her.",
+  "director": "aalam-warqe davidian",
+  "cast": "mitiku haylu, weyenshiet belachew, rodas gizaw",
+  "releaseDate": {
+    "$date": "2022-12-05T20:11:00Z"
+  },
+  "endDate": {
+    "$date": "2023-05-30T20:11:00Z"
+  },
+  "genre": "drama",
+  "__v": 0,
+  "image": "http://localhost:8080/uploads/movies/1656706449924-Fig Tree.jpg"
+},{
+  "_id": {
+    "$oid": "62bf565d69f1c8cf5f287252"
+  },
+  "title": "the athlete",
+  "language": "amharic",
+  "duration": 92,
+  "description": "running the streets of rome in 1960, an unknown, barefooted ethiopian man stunned the world by winning olympic gold in the marathon. overnight, abebe bikila became a sports legend. a hero in his own country and to the continent, bikila was the first african to win a gold medal, and four years later in tokyo would become the first person in history to win consecutive olympic gold medals in the marathon. this soldier and quiet son of a shepherd would be acknowledged by many as the greatest long distance runner the world had ever known. one evening while returning to his home in addis ababa from training in the ethiopian countryside, bikila was involved in a tragic car accident which left him paralyzed from the waist down. unable to walk and faced with the greatest challenge of his life, he struggled to maintain his will to live and in the process discovered a deeper meaning of competition, taking up archery for the paralympics and competing as a handicapped dog sledder in norway. though his running career had come to a tragic end, the race of his life had a new beginning. for the first time, the true story of bikila's epic quest for life and sport comes to the big screen. not since raging bull has the life of an athlete been rendered with such emotional power and cinematic grace.",
+  "director": "davey frankel, rasselas lakew",
+  "cast": "rasselas lakew, dag malmberg, ruta gedmintas",
+  "releaseDate": {
+    "$date": "2022-08-11T20:14:00Z"
+  },
+  "endDate": {
+    "$date": "2023-01-27T20:14:00Z"
+  },
+  "genre": "biography,drama",
+  "__v": 0,
+  "image": "http://localhost:8080/uploads/movies/1656706653137-the athlete.jpg"
+},{
+  "_id": {
+    "$oid": "62bf571e69f1c8cf5f287258"
+  },
+  "title": "sost maezen",
+  "language": "amharic",
+  "duration": 90,
+  "description": "kaleab and jemal are two who are willing to endure any travail to reach america and what they deem as a promise of a better life, but is it? along the way kaleab meets winta, who is from neighboring eritrea and on a similar journey as kaleab. kaleab and winta fall in love with each other as the group of ethiopians and eritreans travel an arduous and illegal path from east africa through libya, italy, mexico and finally to america, but their love for each other is tested thoroughly as the group meets up with violence, sickness and, ultimately, tragedy.",
+  "director": "theodros teshome",
+  "cast": "mahder assefa, solomon bogale, joel layogan",
+  "releaseDate": {
+    "$date": "2022-08-27T20:17:00Z"
+  },
+  "endDate": {
+    "$date": "2022-10-29T20:17:00Z"
+  },
+  "genre": "adventure,drama",
+  "__v": 0,
+  "image": "http://localhost:8080/uploads/movies/1656706846391-sost maezen.jpg"
+},{
+  "_id": {
+    "$oid": "62bf57f469f1c8cf5f287268"
+  },
+  "title": "shaft in africa",
+  "language": "english",
+  "duration": 112,
+  "description": "private investigator john shaft is recruited to go undercover to break up a modern slavery ring where young africans are lured to paris to do chain-gang work.",
+  "director": "john guillermin",
+  "cast": "richard roundtree, frank finlay, vonetta mcgee",
+  "releaseDate": {
+    "$date": "2022-11-10T20:22:00Z"
+  },
+  "endDate": {
+    "$date": "2024-06-27T20:22:00Z"
+  },
+  "genre": "action,adventure,crime",
+  "__v": 0,
+  "image": "http://localhost:8080/uploads/movies/1656707060987-ShaftInAfrica.jpg"
+},{
+  "_id": {
+    "$oid": "62bf58c569f1c8cf5f28726e"
+  },
+  "title": "crumbs",
+  "language": "english",
+  "duration": 68,
+  "description": "our figurine sized supermen hero embarks on an epic surreal journey that will take him across the ethiopian post apocalyptic landscape in search of a way to get on the hovering spacecraft that for years has become a landmark in the skies.",
+  "director": "miguel llansó",
+  "cast": "daniel tadesse, quino piñeros, elam tesfayie",
+  "releaseDate": {
+    "$date": "2022-09-21T20:24:00Z"
+  },
+  "endDate": {
+    "$date": "2022-12-23T20:24:00Z"
+  },
+  "genre": "adventure,mystery,fantasy",
+  "__v": 0,
+  "image": "http://localhost:8080/uploads/movies/1656707270081-Crumbs.jpg"
+},{
+  "_id": {
+    "$oid": "62bf598669f1c8cf5f287274"
+  },
+  "title": "13 months of sunshine",
+  "language": "amharic",
+  "duration": 98,
+  "description": "a drama about two ethiopians who enter a marriage of convenience and struggle to maintain traditional values as they strive toward their dreams",
+  "director": "yehdego abeselom",
+  "cast": "sammy amare, tsion fikreselassie, salem dawit",
+  "releaseDate": {
+    "$date": "2022-08-19T20:28:00Z"
+  },
+  "endDate": {
+    "$date": "2023-10-25T20:28:00Z"
+  },
+  "genre": "drama,romance",
+  "__v": 0,
+  "image": "http://localhost:8080/uploads/movies/1656707462962-13 Months of Sunshine.jpg"
+}]
