@@ -23,7 +23,7 @@ function Checkin(props) {
   const checkinReservations = async id => {
     try {
       const token = localStorage.getItem('jwtToken');
-      const url = 'api/reservations/checkin/' + id;
+      const url = 'reservations/checkin/' + id;
       const response = await fetch(url, {
         method: 'GET',
         headers: {

@@ -23,12 +23,12 @@ const port = process.env.PORT || 8080;
 
 app.use(cors());
 
-if(process.env.NODE_ENV === 'production' || process.env.NODE_ENV === 'staging') {
-  app.use(express.static('client/build'));
-  app.get('*', (req,res) => {
-    res.sendFile(path.join(__dirname, 'client/build/index.html' ));
-  });
-}
+// if(process.env.NODE_ENV === 'production' || process.env.NODE_ENV === 'staging') {
+//   app.use(express.static('client/build'));
+//   app.get('*', (req,res) => {
+//     res.sendFile(path.join(__dirname, 'client/build/index.html' ));
+//   });
+// }
 // Serve static files from the React app
 
 app.use(express.static(path.join(__dirname, 'client/build')));
@@ -53,18 +53,18 @@ app.use(function(req, res, next) {
   next();
 });
 app.use(express.json());
-app.use('/api/users',userRouter);
-app.use('/api/movies', movieRouter);
-app.use('/api/cinemas', cinemaRouter);
-app.use('/api/showtimes', showtimeRouter);
-app.use('/api/reservarions', reservationRouter);
-app.use('/api/invitations', invitationsRouter);
+app.use(userRouter);
+app.use(movieRouter);
+app.use(cinemaRouter);
+app.use(showtimeRouter);
+app.use(reservationRouter);
+app.use(invitationsRouter);
 
-// app.get('/api/test', (req, res) => res.send('Hello World'))
+// app.get('/test', (req, res) => res.send('Hello World'))
 
 // The "catchall" handler: for any request that doesn't
 // match one above, send back React's index.html file.
-app.get('/*', (req, res) => {
-  res.sendFile(path.join(__dirname + '../../client/build/index.html'));
+app.get('*', (req, res) => {
+  res.sendFile(path.join(__dirname + 'client/build/index.html'));
 });
 app.listen(port, () => console.log(`app is running in PORT: ${port}`));

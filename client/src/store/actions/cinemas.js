@@ -5,7 +5,7 @@ export const uploadCinemaImage = (id, image) => async dispatch => {
   try {
     const data = new FormData();
     data.append('file', image);
-    const url = 'api/cinemas/photo/' + id;
+    const url = 'cinemas/photo/' + id;
     const response = await fetch(url, {
       method: 'POST',
       body: data
@@ -24,7 +24,7 @@ export const uploadCinemaImage = (id, image) => async dispatch => {
 
 export const getCinemas = () => async dispatch => {
   try {
-    const url = 'api/cinemas';
+    const url = 'cinemas';
     const response = await fetch(url, {
       method: 'GET',
       headers: { 'Content-Type': 'application/json' }
@@ -40,7 +40,7 @@ export const getCinemas = () => async dispatch => {
 
 export const getCinema = id => async dispatch => {
   try {
-    const url = 'api/cinemas/' + id;
+    const url = 'cinemas/' + id;
     const response = await fetch(url, {
       method: 'GET',
       headers: { 'Content-Type': 'application/json' }
@@ -57,7 +57,7 @@ export const getCinema = id => async dispatch => {
 export const createCinemas = (image, newCinema) => async dispatch => {
   try {
     const token = localStorage.getItem('jwtToken');
-    const url = 'api/cinemas';
+    const url = 'cinemas';
     const response = await fetch(url, {
       method: 'POST',
       headers: {
@@ -85,7 +85,7 @@ export const createCinemas = (image, newCinema) => async dispatch => {
 export const updateCinemas = (image, cinema, id) => async dispatch => {
   try {
     const token = localStorage.getItem('jwtToken');
-    const url = 'api/cinemas/' + id;
+    const url = 'cinemas/' + id;
     const response = await fetch(url, {
       method: 'PATCH',
       headers: {
@@ -111,7 +111,7 @@ export const updateCinemas = (image, cinema, id) => async dispatch => {
 export const removeCinemas = id => async dispatch => {
   try {
     const token = localStorage.getItem('jwtToken');
-    const url = 'api/cinemas/' + id;
+    const url = 'cinemas/' + id;
     const response = await fetch(url, {
       method: 'DELETE',
       headers: {
@@ -134,7 +134,7 @@ export const removeCinemas = id => async dispatch => {
 
 export const getCinemasUserModeling = username => async dispatch => {
   try {
-    const url = 'api/cinemas/usermodeling/' + username;
+    const url = 'cinemas/usermodeling/' + username;
     const response = await fetch(url, {
       method: 'GET',
       headers: { 'Content-Type': 'application/json' }

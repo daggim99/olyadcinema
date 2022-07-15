@@ -14,7 +14,7 @@ export const uploadImage = (id, image) => async dispatch => {
   try {
     const data = new FormData();
     data.append('file', image);
-    const url = 'api/users/photo/' + id;
+    const url = 'users/photo/' + id;
     const response = await fetch(url, {
       method: 'POST',
       body: data
@@ -34,7 +34,7 @@ export const uploadImage = (id, image) => async dispatch => {
 // Login user
 export const login = (username, password) => async dispatch => {
   try {
-    const url = 'api/users/login';
+    const url = 'users/login';
     const response = await fetch(url, {
       method: 'POST',
       headers: { 'Content-Type': 'application/json' },
@@ -65,7 +65,7 @@ export const facebookLogin = e => async dispatch => {
       headers: { 'Content-Type': 'application/json' },
       body: JSON.stringify({ email, userID, name })
     };
-    const url = 'api/users/login/facebook';
+    const url = 'users/login/facebook';
     const response = await fetch(url, options);
     const responseData = await response.json();
 
@@ -93,7 +93,7 @@ export const googleLogin = ({ profileObj }) => async dispatch => {
       headers: { 'Content-Type': 'application/json' },
       body: JSON.stringify({ email, googleId, name })
     };
-    const url = 'api/users/login/google';
+    const url = 'users/login/google';
     const response = await fetch(url, options);
     const responseData = await response.json();
 
@@ -123,7 +123,7 @@ export const register = ({
   password
 }) => async dispatch => {
   try {
-    const url = 'api/users';
+    const url = 'users';
     const body = { name, username, email, phone, password };
     const response = await fetch(url, {
       method: 'POST',
@@ -152,7 +152,7 @@ export const register = ({
 export const loadUser = () => async dispatch => {
   if (!isLoggedIn()) return;
   try {
-    const url = 'api/users/me';
+    const url = 'users/me';
     const response = await fetch(url, {
       method: 'GET',
       headers: setAuthHeaders()
@@ -173,7 +173,7 @@ export const loadUser = () => async dispatch => {
 export const logout = () => async dispatch => {
   try {
     const token = localStorage.getItem('jwtToken');
-    const url = 'api/users/logout';
+    const url = 'users/logout';
     const response = await fetch(url, {
       method: 'POST',
       headers: {
