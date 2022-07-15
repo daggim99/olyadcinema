@@ -75,11 +75,16 @@ function LoginForm(props) {
   const [values, setValues] = useState({ username: '', password: '' });
 
   useEffect(() => {
-    if (isAuthenticated && redirect) {
+    if (isAuthenticated && redirect && login) {
       if (user && user.role === 'superadmin')
         return history.push('/admin/dashboard');
+      }
+    if(isAuthenticated && redirect && login)
+      if(user)
       return history.push('/homepage');
-    }
+    else 
+      return history.push('/')
+    
   }, [isAuthenticated, user, redirect]);
 
   const handleFieldChange = e =>

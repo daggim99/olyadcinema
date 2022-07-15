@@ -9,6 +9,8 @@ import MomentUtils from '@date-io/moment';
 export default function BookingForm(props) {
   const {
     cinemas,
+    account,
+    bank,
     showtimes,
     selectedCinema,
     onChangeCinema,
@@ -38,7 +40,41 @@ export default function BookingForm(props) {
     );
 
   return (
+    
     <Grid container spacing={3}>
+
+<Grid item xs>
+        <TextField
+          fullWidth
+          value= {bank}
+          label="Bank Name"
+          // variant="outlined"
+          onChange={onChangeCinema}>
+          {/* {cinemas.map(cinema => (
+            <MenuItem key={cinema._id} value={cinema._id}>
+              {cinema.name}
+            </MenuItem>
+          ))} */}
+        </TextField>
+      </Grid>
+
+      <Grid item xs>
+        <TextField
+          fullWidth
+          value= {account}
+          label="Account Number"
+          // variant="outlined"
+          onChange={onChangeCinema}>
+          {/* {cinemas.map(cinema => (
+            <MenuItem key={cinema._id} value={cinema._id}>
+              {cinema.name}
+            </MenuItem>
+          ))} */}
+        </TextField>
+      </Grid>
+
+
+
       <Grid item xs>
         <TextField
           fullWidth
@@ -54,6 +90,8 @@ export default function BookingForm(props) {
           ))}
         </TextField>
       </Grid>
+
+
       {showtime && (
         <Grid item xs>
           <MuiPickersUtilsProvider utils={MomentUtils}>

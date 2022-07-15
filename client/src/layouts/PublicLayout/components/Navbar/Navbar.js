@@ -73,9 +73,9 @@ class Navbar extends Component {
                   </ListItem>
                 )}
 
-                {isAuth && login ? (
+                {isAuth && user && login ? (
                   <ListItem>
-                    <Link className={classes.navLink} onClick={logout} to="/login">
+                    <Link className={classes.navLink} onClick={logout} to="/">
                       Logout
                     </Link>
                   </ListItem>

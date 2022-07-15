@@ -5,7 +5,8 @@ import { withStyles, Box, Grid } from '@material-ui/core';
 import {
   getMovies,
   getShowtimes,
-  getMovieSuggestion
+  getMovieSuggestion,
+  login
 } from '../../../store/actions';
 import MovieCarousel from '../components/MovieCarousel/MovieCarousel';
 import MovieBanner from '../components/MovieBanner/MovieBanner';
@@ -24,7 +25,7 @@ class HomePage extends Component {
     } = this.props;
     if (!movies.length) getMovies();
     if (!showtimes.length) getShowtimes();
-    if (user) {
+    if (user && login) {
       if (!suggested.length) getMovieSuggestion(user.username);
     }
   }
