@@ -18,6 +18,7 @@ const Account = lazy(() => import('./pages/Admin/Account'));
 // Register - Login
 const Register = lazy(() => import('./pages/Public/Register'));
 const Login = lazy(() => import('./pages/Public/Login'));
+const Bank = lazy(() => import('./pages/Public/Bank'));
 
 // Public
 const HomePage = lazy(() => import('./pages/Public/HomePage'));
@@ -37,6 +38,7 @@ const Routes = () => {
       <Router>
         <Switch>
           <Route exact path="/login" component={Login} />
+          <Route exact path="/" component={Login} />
           <Route exact path="/register" component={Register} />
 
           <WithLayoutRoute
@@ -48,10 +50,18 @@ const Routes = () => {
 
           <WithLayoutRoute
             exact
-            path="/"
+            path="/homepage"
             layout={PublicLayout}
             component={HomePage}
           />
+
+          <WithLayoutRoute
+            exact
+            path="/bank"
+            layout={PublicLayout}
+            component={Bank}
+          />
+
           <WithLayoutRoute
             exact
             path="/mydashboard"

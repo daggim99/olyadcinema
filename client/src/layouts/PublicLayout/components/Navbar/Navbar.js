@@ -1,7 +1,7 @@
 import React, { Component, Fragment } from 'react';
 import { Link } from 'react-router-dom';
 import { connect } from 'react-redux';
-import { logout } from '../../../../store/actions';
+import { login, logout } from '../../../../store/actions';
 import classnames from 'classnames';
 import { withStyles, Typography, List, ListItem } from '@material-ui/core';
 
@@ -36,13 +36,13 @@ class Navbar extends Component {
             [classes.navbar]: true,
             [classes.navbarColor]: scrollPos > 30
           })}>
-          <Link className={classes.logoLink} to="/">
+          <Link className={classes.logoLink} to="/homepage">
             <Typography className={classes.logo} variant="h2">
               Olyad Cinema
             </Typography>
           </Link>
           <div className={classes.navLinks}>
-            <Link className={classes.navLink} to="/">
+            <Link className={classes.navLink} to="/homepage">
               Home
             </Link>
             <Link className={classes.navLink} to="/movie/category/nowShowing">
@@ -73,9 +73,9 @@ class Navbar extends Component {
                   </ListItem>
                 )}
 
-                {isAuth ? (
+                {isAuth && login ? (
                   <ListItem>
-                    <Link className={classes.navLink} onClick={logout} to="/">
+                    <Link className={classes.navLink} onClick={logout} to="/login">
                       Logout
                     </Link>
                   </ListItem>
@@ -121,7 +121,7 @@ class Navbar extends Component {
               className={classes.innerNav}
               onClick={() => this.setState({ showMenu: !this.state.showMenu })}>
               <li className={classes.innerNavListItem}>
-                <Link className={classes.innerNavLink} to="/">
+                <Link className={classes.innerNavLink} to="/homepage">
                   Home
                 </Link>
               </li>

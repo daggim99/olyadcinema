@@ -78,7 +78,7 @@ function LoginForm(props) {
     if (isAuthenticated && redirect) {
       if (user && user.role === 'superadmin')
         return history.push('/admin/dashboard');
-      return history.push('/');
+      return history.push('/homepage');
     }
   }, [isAuthenticated, user, redirect]);
 

@@ -4,9 +4,11 @@ import { register } from '../../../store/actions';
 import { Link } from 'react-router-dom';
 import PropTypes from 'prop-types';
 import { withStyles } from '@material-ui/core';
+// import BookingPage form ''
+// import MovieBanner from '../components/MovieBanner/MovieBanner';
 import {
-  Button,
-  Checkbox,
+  // Button,
+  // Checkbox,
   Grid,
   IconButton,
   TextField,
@@ -14,18 +16,15 @@ import {
 } from '@material-ui/core';
 import { ArrowBack as ArrowBackIcon } from '@material-ui/icons';
 import styles from './styles';
-import FileUpload from '../../../components/FileUpload/FileUpload';
+// import FileUpload from '../../../components/FileUpload/FileUpload';
 
-class Register extends Component {
+class Bank extends Component {
   state = {
     values: {
       name: '',
-      username: '',
+      account: '',
       email: '',
       phone: '',
-      password: '',
-      image: null,
-      policy: false
     }
   };
 
@@ -51,11 +50,14 @@ class Register extends Component {
     this.props.register(newUser);
   };
 
+
+
   render() {
     const { classes } = this.props;
     const { values } = this.state;
+    // const { movie } = this.props;
 
-    const isValid = values.policy;
+    // const isValid = values.policy;
 
     return (
       <div className={classes.root}>
@@ -75,10 +77,10 @@ class Register extends Component {
               <div className={classes.contentBody}>
                 <form className={classes.form}>
                   <Typography className={classes.title} variant="h2">
-                    Create new account
+                    Bank Form
                   </Typography>
                   <Typography className={classes.subtitle} variant="body1">
-                    Use your email to create new account... it's free.
+                    Please Provide your bank information for payment.
                   </Typography>
                   <div className={classes.fields}>
                     <TextField
@@ -93,11 +95,11 @@ class Register extends Component {
                     />
                     <TextField
                       className={classes.textField}
-                      label="User name"
-                      name="username"
-                      value={values.username}
+                      label="Account Number"
+                      name="account"
+                      value={values.account}
                       onChange={event =>
-                        this.handleFieldChange('username', event.target.value)
+                        this.handleFieldChange('account', event.target.value)
                       }
                       variant="outlined"
                     />
@@ -121,62 +123,25 @@ class Register extends Component {
                         this.handleFieldChange('phone', event.target.value)
                       }
                     />
-                    <TextField
-                      className={classes.textField}
-                      label="Password"
-                      type="password"
-                      value={values.password}
-                      variant="outlined"
-                      onChange={event =>
-                        this.handleFieldChange('password', event.target.value)
-                      }
-                    />
-                    <FileUpload
-                      className={classes.upload}
-                      file={values.image}
-                      onUpload={event => {
-                        const file = event.target.files[0];
-                        this.handleFieldChange('image', file);
-                      }}
-                    />
-                    <div className={classes.policy}>
-                      <Checkbox
-                        checked={values.policy}
-                        className={classes.policyCheckbox}
-                        color="primary"
-                        name="policy"
-                        onChange={() =>
-                          this.handleFieldChange('policy', !values.policy)
-                        }
-                      />
-                      <Typography
-                        className={classes.policyText}
-                        variant="body1">
-                        I have read the &nbsp;
-                        <Link className={classes.policyUrl} to="#">
-                          Terms and Conditions
-                        </Link>
-                        .
-                      </Typography>
-                    </div>
                   </div>
 
-                  <Button
+                  {/* <Button
                     className={classes.registerButton}
                     color="primary"
                     disabled={!isValid}
                     onClick={this.handleRegister}
                     size="large"
                     variant="contained">
-                    Register now
-                  </Button>
-
+                    Pay Now
+                  </Button> */}
+                  
+                  {/* <MovieBanner movie={movie}> */}
                   <Typography className={classes.login} variant="body1">
-                    Have an account?{' '}
-                    <Link className={classes.loginUrl} to="/login">
-                      Login
+                    <Link className={classes.loginUrl} to="/movie/booking">
+                      PAY NOW
                     </Link>
                   </Typography>
+                  {/* </MovieBanner> */}
                 </form>
               </div>
             </div>
@@ -187,7 +152,7 @@ class Register extends Component {
   }
 }
 
-Register.propTypes = {
+Bank.propTypes = {
   className: PropTypes.string,
   classes: PropTypes.object.isRequired,
   history: PropTypes.object.isRequired,
@@ -199,5 +164,5 @@ const mapStateToProps = state => ({
 });
 
 export default withStyles(styles)(
-  connect(mapStateToProps, { register })(Register)
+  connect(mapStateToProps, { register })(Bank)
 );

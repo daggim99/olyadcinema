@@ -52,7 +52,7 @@ class Topbar extends Component {
             </IconButton>
           </div>
 
-          <NavLink className={classes.title} to="/">
+          <NavLink className={classes.title} to="/homepage">
             Olyad Cinema
           </NavLink>
 
