@@ -68,6 +68,7 @@ class ReservationsTable extends Component {
                 <TableCell align="left">Movie</TableCell>
                 <TableCell align="left">Cinema</TableCell>
                 <TableCell align="left">Ticket Price</TableCell>
+                <TableCell align="left">VIP Ticket Price</TableCell>
                 <TableCell align="left">Total</TableCell>
                 <TableCell align="left">Checkin</TableCell>
               </TableRow>
@@ -99,6 +100,9 @@ class ReservationsTable extends Component {
                     </TableCell>
                     <TableCell className={classes.tableCell}>
                       {reservation.ticketPrice}
+                    </TableCell>
+                    <TableCell className={classes.tableCell}>
+                      {reservation.vipPrice}
                     </TableCell>
                     <TableCell className={classes.tableCell}>
                       {reservation.total}

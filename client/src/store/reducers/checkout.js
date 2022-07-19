@@ -1,5 +1,6 @@
 import {
   SET_SELECTED_SEATS,
+  SET_SELECTED_VIP_SEATS,
   SET_SELECTED_CINEMA,
   SET_SELECTED_DATE,
   SET_SELECTED_TIME,
@@ -8,12 +9,15 @@ import {
   RESET_CHECKOUT,
   SET_INVITATION,
   SET_SUGGESTED_SEATS,
+  SET_SUGGESTED_VIP_SEATS,
   SET_QR_CODE
 } from '../types';
 
 const initialState = {
   selectedSeats: [],
+  selectedVipSeats: [],
   suggestedSeat: [],
+  suggestedVipSeat: [],
   selectedCinema: '',
   selectedDate: null,
   selectedTime: '',
@@ -40,6 +44,23 @@ const setSelectedSeats = (state, seats) => {
   };
 };
 
+const setSelectedVipSeats = (state, vipSeats) => {
+  let newVipSeats = [];
+  const vipSeatExist = state.selectedVipSeats.find(
+    vipSeat => JSON.stringify(vipSeat) === JSON.stringify(vipSeats)
+  );
+  !vipSeatExist
+    ? (newVipSeats = [...state.selectedVipSeats, vipSeats])
+    : (newVipSeats = state.selectedVipSeats.filter(
+        vipSeat => JSON.stringify(vipSeat) !== JSON.stringify(vipSeats)
+      ));
+
+  return {
+    ...state,
+    selectedVipSeats: newVipSeats
+  };
+};
+
 const setSuggestedSeats = (state, seats) => {
   let newSeats = [];
 
@@ -48,6 +69,17 @@ const setSuggestedSeats = (state, seats) => {
   return {
     ...state,
     suggestedSeat: newSeats
+  };
+};
+
+const setSuggestedVipSeats = (state, vipSeats) => {
+  let newVipSeats = [];
+
+  newVipSeats = [...state.suggestedVipSeat, vipSeats];
+
+  return {
+    ...state,
+    suggestedVipSeat: newVipSeats
   };
 };
 
@@ -95,8 +127,12 @@ export default function(state = initialState, action) {
   switch (type) {
     case SET_SELECTED_SEATS:
       return setSelectedSeats(state, payload);
+    case SET_SELECTED_VIP_SEATS:
+        return setSelectedVipSeats(state, payload);
     case SET_SUGGESTED_SEATS:
       return setSuggestedSeats(state, payload);
+    case SET_SUGGESTED_VIP_SEATS:
+        return setSuggestedVipSeats(state, payload);
     case SET_SELECTED_CINEMA:
       return setSelectedCinema(state, payload);
     case SET_SELECTED_DATE:

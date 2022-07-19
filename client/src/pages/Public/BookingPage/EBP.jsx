@@ -31,7 +31,6 @@ import styles from './styles';
 import MovieInfo from './components/MovieInfo/MovieInfo';
 import BookingForm from './components/BookingForm/BookingForm';
 import BookingSeats from './components/BookingSeats/BookingSeats';
-import BookingVipSeats from './components/BookingSeats/BookingVipSeats';
 import BookingCheckout from './components/BookingCheckout/BookingCheckout';
 import BookingInvitation from './components/BookingInvitation/BookingInvitation';
 
@@ -578,13 +577,12 @@ class BookingPage extends Component {
 
             {cinema && selectedCinema && selectedTime && !showInvitation && (
               <>
-                <BookingVipSeats
+                <BookingSeats
                   vipSeats={vipSeats}
                   onSelectVipSeat={(indexRow, index) =>
                     this.onSelectVipSeat(indexRow, index)
                   }
-               />
-
+                />
                 <BookingSeats
                   seats={seats}
                   onSelectSeat={(indexRow, index) =>

@@ -50,14 +50,18 @@ export const addUser = user => async dispatch => {
       },
       body: JSON.stringify(user)
     });
-    const data = await response.json();
-    const newUser = data.user;
+    // const data = await response.json();
+    // const newUser = data.user;
     if (response.ok) {
       dispatch(setAlert('User Created', 'success', 5000));
-      dispatch({ type: ADD_USER, payload: newUser });
+      dispatch({ type: ADD_USER, payload: user });
       return { status: 'success', message: 'User Created' };
     } else {
-      throw new Error(data._message);
+      dispatch(setAlert(user._message, 'error', 5000));
+      // console.log(data);
+      console.log(user);
+      // console.log(newUser);
+      throw new Error('hello thier');
     }
   } catch (error) {
     dispatch(setAlert(error.message, 'error', 5000));

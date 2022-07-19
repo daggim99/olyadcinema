@@ -11,6 +11,7 @@ import {
 import MovieCarousel from '../components/MovieCarousel/MovieCarousel';
 import MovieBanner from '../components/MovieBanner/MovieBanner';
 import styles from './styles';
+// import MovieToolbar from '../../Admin/MovieList/components/MovieToolbar/MovieToolbar';
 
 class HomePage extends Component {
   componentDidMount() {
@@ -66,6 +67,7 @@ class HomePage extends Component {
           to="/movie/category/comingSoon"
           movies={comingSoon}
         />
+
         {false && (
           <Grid container style={{ height: 500 }}>
             <Grid item xs={7} style={{ background: '#131334' }}></Grid>

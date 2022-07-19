@@ -94,6 +94,9 @@ class ReservationsTable extends Component {
                       {reservation.ticketPrice}
                     </TableCell>
                     <TableCell className={classes.tableCell}>
+                      {reservation.vipPrice}
+                    </TableCell>
+                    <TableCell className={classes.tableCell}>
                       {reservation.total}
                     </TableCell>
                   </TableRow>

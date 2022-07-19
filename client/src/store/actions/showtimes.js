@@ -47,15 +47,21 @@ export const addShowtime = showtime => async dispatch => {
       },
       body: JSON.stringify(showtime)
     });
+
     if (response.ok) {
+      console.log(showtime);
+
       dispatch(setAlert('Showtime Created', 'success', 5000));
       return { status: 'success', message: 'Showtime Created' };
+
+      // console.log('User = ' + user);
+      // console.log('New User = ' + newUser);
     }
   } catch (error) {
     dispatch(setAlert(error.message, 'error', 5000));
     return {
       status: 'error',
-      message: ' Cinema have not been saved, try again.'
+      message: ' Showtime have not been saved, try again.'
     };
   }
 };

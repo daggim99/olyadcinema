@@ -26,9 +26,13 @@ export default function BookingCheckout(props) {
   const {
     user,
     ticketPrice,
+    vipPrice,
     selectedSeats,
+    selectedVipSeats,
     seatsAvailable,
-    onBookSeats
+    seatsVipAvailable,
+    onBookSeats,
+    // onBookVipSeats,
   } = props;
 
   return (
@@ -54,10 +58,45 @@ export default function BookingCheckout(props) {
                 <Typography className={classes.bannerContent}>0</Typography>
               )}
             </Grid>
+
+            <Grid item>
+              <Typography className={classes.bannerTitle}>VIP Tickets</Typography>
+              {selectedVipSeats > 0 ? (
+                <Typography className={classes.bannerContent}>
+                  {selectedVipSeats} VIP tickets
+                </Typography>
+              ) : (
+                <Typography className={classes.bannerContent}>0</Typography>
+              )}
+            </Grid>
+
+            <Grid item>
+              <Typography className={classes.bannerTitle}>Total Tickets</Typography>
+              {selectedVipSeats > 0 || selectedSeats > 0 ? (
+                <Typography className={classes.bannerContent}>
+                  {selectedVipSeats + selectedSeats} Total tickets
+                </Typography>
+              ) : (
+                <Typography className={classes.bannerContent}>0</Typography>
+              )}
+            </Grid>
+
             <Grid item>
               <Typography className={classes.bannerTitle}>Price</Typography>
               <Typography className={classes.bannerContent}>
                 {ticketPrice * selectedSeats} Birr
+              </Typography>
+            </Grid>
+            <Grid item>
+              <Typography className={classes.bannerTitle}>VIP Price</Typography>
+              <Typography className={classes.bannerContent}>
+                {vipPrice * selectedVipSeats} Birr
+              </Typography>
+            </Grid>
+            <Grid item>
+              <Typography className={classes.bannerTitle}>Total Price</Typography>
+              <Typography className={classes.bannerContent}>
+                {(vipPrice * selectedVipSeats) + (ticketPrice * selectedSeats)} Birr
               </Typography>
             </Grid>
           </Grid>
@@ -74,11 +113,28 @@ export default function BookingCheckout(props) {
           <Button
             color="inherit"
             fullWidth
-            disabled={seatsAvailable <= 0}
+            disabled={seatsAvailable <= 0 || seatsVipAvailable <= 0 || selectedSeats <=0 || selectedVipSeats <= 0}
             onClick={() => onBookSeats()}>
             Checkout
           </Button>
         </Grid>
+        {/* <Grid
+          item
+          xs={4}
+          md={2}
+          style={{
+            color: 'rgb(255, 239, 130)',
+            background: 'black',
+            display: 'flex'
+          }}>
+          <Button
+            color="inherit"
+            fullWidth
+            disabled={seatsVipAvailable <= 0}
+            onClick={() => onBookVipSeats()}>
+            Checkout
+          </Button>
+        </Grid> */}
       </Grid>
     </Box>
   );

@@ -1,5 +1,6 @@
 import {
   SET_SELECTED_SEATS,
+  SET_SELECTED_VIP_SEATS, 
   SET_SELECTED_CINEMA,
   SET_SELECTED_DATE,
   SET_SELECTED_TIME,
@@ -8,6 +9,7 @@ import {
   SHOW_INVITATION_FORM,
   RESET_CHECKOUT,
   SET_SUGGESTED_SEATS,
+  SET_SUGGESTED_VIP_SEATS,
   SET_QR_CODE
 } from '../types';
 
@@ -16,10 +18,21 @@ export const setSelectedSeats = seats => ({
   payload: seats
 });
 
+export const setSelectedVipSeats = vipSeats => ({
+  type: SET_SELECTED_VIP_SEATS,
+  payload: vipSeats
+});
+
 export const setSuggestedSeats = seats => ({
   type: SET_SUGGESTED_SEATS,
   payload: seats
 });
+
+export const setSuggestedVipSeats = seats => ({
+  type: SET_SUGGESTED_VIP_SEATS,
+  payload: seats
+});
+
 
 export const setSelectedCinema = cinema => ({
   type: SET_SELECTED_CINEMA,

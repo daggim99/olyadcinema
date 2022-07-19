@@ -18,6 +18,20 @@ const useStyles = makeStyles(theme => ({
       background: 'rgb(120, 205, 4)'
     }
   },
+  
+  vipSeat: {
+    cursor: 'pointer',
+    color: 'rgba(255,255,255,0.7)',
+    borderRadius: 2,
+    padding: theme.spacing(2),
+    margin: theme.spacing(0.5),
+    fontWeight: 600,
+    '&:hover': {
+      background: 'rgb(97, 72, 28)'
+    }
+  },
+  
+
   seatInfoContainer: {
     width: '50%',
     margin: 'auto',
@@ -38,6 +52,7 @@ const useStyles = makeStyles(theme => ({
 
   [theme.breakpoints.down('sm')]: {
     seat: { padding: theme.spacing(1.2), margin: theme.spacing(0.5) },
+    vipSeat: { padding: theme.spacing(1.2), margin: theme.spacing(0.5) },
     seatInfoContainer: { width: '100%', display: 'block' },
     seatInfo: { marginTop: theme.spacing(2) }
   }
@@ -45,7 +60,7 @@ const useStyles = makeStyles(theme => ({
 
 export default function BookingSeats(props) {
   const classes = useStyles(props);
-  const { seats, onSelectSeat } = props;
+  const { seats, vipSeats, onSelectSeat, onSelectVipSeat } = props;
 
   return (
     <Fragment>
@@ -73,7 +88,33 @@ export default function BookingSeats(props) {
             </div>
           ))}
       </Box>
-     
+
+      <Box width={1} pt={15}>
+        {vipSeats.length > 0 &&
+          vipSeats.map((vipSeatRows, indexRow) => (
+            <div key={indexRow} className={classes.row}>
+              {vipSeatRows.map((vipSeat, index) => (
+                <Box
+                  key={`vipSeat-${index}`}
+                  onClick={() => onSelectVipSeat(indexRow, index)}
+                  className={classes.vipSeat}
+                  bgcolor={
+                    vipSeat === 1
+                      ? 'rgb(230, 179, 37)'
+                      : vipSeat === 2
+                      ? 'rgb(97, 72, 28)'
+                      : vipSeat === 3
+                      ? 'rgb(255, 239, 130)'
+                      : 'rgb(186, 189, 66)'
+                  }>
+                  {index + 1}
+                </Box>
+              ))}
+            </div>
+          ))}
+      </Box>
+
+
       <Box width={1} mt={10}>
         <div className={classes.seatInfoContainer}>
           <div className={classes.seatInfo}>
@@ -107,25 +148,25 @@ export default function BookingSeats(props) {
           <div className={classes.seatInfo}>
             <div
               className={classes.seatInfoLabel}
-              style={{ background: 'rgb(247,56,89)' }}></div>
+              style={{ background: 'rgb(186, 189, 66)' }}></div>
             VIP Seat Available
           </div>
           <div className={classes.seatInfo}>
             <div
               className={classes.seatInfoLabel}
-              style={{ background: 'rgb(240,165,0)' }}></div>
+              style={{ background: 'rgb(230, 179, 37)' }}></div>
             VIP Reserved Seat
           </div>
           <div className={classes.seatInfo}>
             <div
               className={classes.seatInfoLabel}
-              style={{ background: 'rgb(107,1,31)' }}></div>
+              style={{ background: 'rgb(97, 72, 28)' }}></div>
             Selected VIP Seat
           </div>
           <div className={classes.seatInfo}>
             <div
               className={classes.seatInfoLabel}
-              style={{ background: 'rgb(240,140,120)' }}></div>
+              style={{ background: 'rgb(255, 239, 130)' }}></div>
             Recommended VIP Seat
           </div>
         </div>

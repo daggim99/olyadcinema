@@ -3,6 +3,9 @@ import { connect } from 'react-redux';
 import { makeStyles, Grid, Typography } from '@material-ui/core';
 import ResponsiveMovieCard from '../components/ResponsiveMovieCard/ResponsiveMovieCard';
 import { getMovies } from '../../../store/actions';
+import MovieToolbar from '../../../layouts/PublicLayout/components/MovieToolbar/MovieToolbar';
+// import { match } from '../../../utils';
+
 
 const useStyles = makeStyles(theme => ({
   title: {
@@ -30,6 +33,7 @@ function MovieCategoryPage(props) {
   const classes = useStyles(props);
   return (
     <Grid container spacing={2}>
+
       {!['nowShowing', 'comingSoon'].includes(category) ? (
         <Grid item xs={12}>
           <Typography className={classes.title} variant="h2" color="inherit">
@@ -42,6 +46,8 @@ function MovieCategoryPage(props) {
             <Typography className={classes.title} variant="h2" color="inherit">
               {category}
             </Typography>
+            <MovieToolbar />
+
           </Grid>
           <Grid
             container

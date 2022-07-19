@@ -20,8 +20,11 @@ class AddCinema extends Component {
     name: '',
     image: null,
     ticketPrice: '',
+    vipPrice: '',
     city: '',
     seatsAvailable: '',
+    seatsVipAvailable: '',
+    vipSeats: [],
     seats: [],
     notification: {}
   };
@@ -51,11 +54,14 @@ class AddCinema extends Component {
       name,
       image,
       ticketPrice,
+      vipPrice,
       city,
       seatsAvailable,
-      seats
+      seatsVipAvailable,
+      seats,
+      vipSeats,
     } = this.state;
-    const cinema = { name, ticketPrice, city, seatsAvailable, seats };
+    const cinema = { name, ticketPrice, vipPrice, city, seatsAvailable, seatsVipAvailable, seats, vipSeats };
     let notification = {};
     type === 'create'
       ? (notification = await createCinemas(image, cinema))
@@ -68,10 +74,14 @@ class AddCinema extends Component {
 
   handleSeatsChange = (index, value) => {
     if (value > 10) return;
-    const { seats } = this.state;
+    const { seats, vipSeats } = this.state;
     seats[index] = Array.from({ length: value }, () => 0);
+    vipSeats[index] = Array.from({ length: value }, () => 0);
     this.setState({
       seats
+    });
+    this.setState({
+      vipSeats
     });
   };
 
@@ -81,14 +91,23 @@ class AddCinema extends Component {
     }));
   };
 
+  onAddVipSeatRow = () => {
+    this.setState(prevState => ({
+      vipSeats: [...prevState.vipSeats, []]
+    }));
+  };
+
   renderSeatFields = () => {
-    const { seats } = this.state;
+    const { seats, vipSeats } = this.state;
     const { classes } = this.props;
     return (
       <>
         <div className={classes.field}>
           <Button onClick={() => this.onAddSeatRow()}>
             <Add /> add Seats
+          </Button>
+          <Button onClick={() => this.onAddVipSeatRow()}>
+            <Add /> add VIP Seats
           </Button>
         </div>
         {seats.length > 0 &&
@@ -116,6 +135,31 @@ class AddCinema extends Component {
               />
             </div>
           ))}
+          {vipSeats.length > 0 &&
+          vipSeats.map((vipSeat, index) => (
+            <div key={`vipSeat-${index}-${vipSeat.length}`} className={classes.field}>
+              <TextField
+                key={`new-vipSeat-${index}`}
+                className={classes.textField}
+                label={
+                  'Add number of VIP seats for row : ' +
+                  (index + 10).toString(36).toUpperCase()
+                }
+                margin="dense"
+                required
+                value={vipSeat.length}
+                variant="outlined"
+                type="number"
+                inputProps={{
+                  min: 0,
+                  max: 10
+                }}
+                onChange={event =>
+                  this.handleSeatsChange(index, event.target.value)
+                }
+              />
+            </div>
+          ))}
       </>
     );
   };
@@ -126,8 +170,10 @@ class AddCinema extends Component {
       name,
       image,
       ticketPrice,
+      vipPrice,
       city,
       seatsAvailable,
+      seatsVipAvailable,
       notification
     } = this.state;
 
@@ -198,6 +244,17 @@ class AddCinema extends Component {
             />
             <TextField
               className={classes.textField}
+              label="VIP Ticket Price"
+              margin="dense"
+              type="number"
+              value={vipPrice}
+              variant="outlined"
+              onChange={event =>
+                this.handleFieldChange('vipPrice', event.target.value)
+              }
+            />
+            <TextField
+              className={classes.textField}
               label="Seats Available"
               margin="dense"
               required
@@ -207,6 +264,19 @@ class AddCinema extends Component {
                 this.handleFieldChange('seatsAvailable', event.target.value)
               }
             />
+
+<TextField
+              className={classes.textField}
+              label="VIP Seats Available"
+              margin="dense"
+              required
+              value={seatsVipAvailable}
+              variant="outlined"
+              onChange={event =>
+                this.handleFieldChange('seatsVipAvailable', event.target.value)
+              }
+            />
+
           </div>
           {this.renderSeatFields()}
         </form>
