@@ -12,6 +12,10 @@ const cinemaSchema = new Schema({
     type: Number,
     required: true,
   },
+  vipPrice: {
+    type: Number,
+    required: true,
+  },
   city: {
     type: String,
     required: true,
@@ -22,7 +26,15 @@ const cinemaSchema = new Schema({
     type: [Schema.Types.Mixed],
     required: true,
   },
+  vipSeats: {
+    type: [Schema.Types.Mixed],
+    required: true,
+  },
   seatsAvailable: {
+    type: Number,
+    required: true,
+  },
+  seatsVipAvailable: {
     type: Number,
     required: true,
   },

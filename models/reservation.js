@@ -15,7 +15,15 @@ const reservationSchema = new Schema({
     type: [Schema.Types.Mixed],
     required: true,
   },
+  vipSeats: {
+    type: [Schema.Types.Mixed],
+    required: true,
+  },
   ticketPrice: {
+    type: Number,
+    required: true,
+  },
+  vipPrice: {
     type: Number,
     required: true,
   },
