@@ -18,7 +18,7 @@ class MovieList extends Component {
   }
 
   renderMovies() {
-    const { classes } = this.props;
+    // const { classes } = this.props;
     const movies = match(this.state.search, this.props.movies, 'title');
 
     if (!movies.length) {
@@ -27,22 +27,7 @@ class MovieList extends Component {
           <CircularProgress />
         </div>
       );
-    }
-    return (
-      <Grid container spacing={3}>
-        {movies.map(movie => (
-          <Grid
-            item
-            key={movie._id}
-            lg={4}
-            md={6}
-            xs={12}
-            onClick={() => this.props.onSelectMovie(movie)}>
-            <MovieCard movie={movie} />
-          </Grid>
-        ))}
-      </Grid>
-    );
+    };
   }
 
   render() {
